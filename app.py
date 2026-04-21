@@ -58,7 +58,7 @@ def analyse():
 
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-   import os
+    import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
