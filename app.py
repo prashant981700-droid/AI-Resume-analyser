@@ -55,12 +55,6 @@ def analyse():
         'courses':        courses,
         'resume_preview': resume_text[:600] + ('...' if len(resume_text) > 600 else '')
     })
-
-if __name__ == '__main__':
-    os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-import os
-
-port = int(os.environ.get("PORT", 10000))
 if __name__ == "__main__":
     import os
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
