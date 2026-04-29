@@ -60,8 +60,10 @@ if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 import os
 
+port = int(os.environ.get("PORT", 10000))
 if __name__ == "__main__":
+    import os
+    os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+
     port = int(os.environ.get("PORT", 10000))
-import os 
-port = int(os.environ.get("PORT",8080))
-app.run(host="0.0.0.0",port=port, debug=false)
+    app.run(host="0.0.0.0", port=port, debug=False)
